@@ -2,7 +2,7 @@
     "name": "ljd/dotars",
     "description": "初始化PHP Tars框架",
     "type": "project",
-    "license": "",
+    "license": "MIT",
     "authors": [
         {
             "name": "李俊东",
