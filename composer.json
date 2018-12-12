@@ -1,0 +1,19 @@
+{
+    "name": "php/dotars001",
+    "description": "初始化PHPTars项目",
+    "type": "project",
+    "license": "ljd",
+    "authors": [
+        {
+            "name": "李俊东",
+            "email": "jackylee92@139.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "src\\service\\": "src/service/Basic"
+        }
+    }
+}
