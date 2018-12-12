@@ -1,2 +1,4 @@
 <?php
-echo 1;
+class Basic {
+
+}
