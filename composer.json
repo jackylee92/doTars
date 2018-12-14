@@ -11,7 +11,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "ljd/dotars-init": "v4",
+        "ljd/dotars-init": "v5",
         "phptars/tars-server": "~0.1",
         "phptars/tars-deploy": "~0.1",
         "phptars/tars2php": "~0.1",
@@ -20,9 +20,6 @@
     },
     "scripts" : {
         "post-create-project-cmd": "dotars\\DotarsInit::index",
-        "pre-install-cmd": "dotars\\DotarsInit::index",
-        "post-install-cmd": "dotars\\DotarsInit::index",
-        "post-package-install": "dotars\\DotarsInit::index",
         "deploy" : "\\Tars\\deploy\\Deploy::run"
     },
     "autoload": {
