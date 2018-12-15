@@ -1,10 +1,16 @@
 #!/bin/sh
 
-doTarsIP=$0
-doTarsType=$1
-doTarsServerName=$2
-doTarsServantName=$3
-doTarsObjName=$4
+doTarsIP="1.1.1.1"
+doTarsType="client"
+doTarsServerName="Topic"
+doTarsServantName="Server"
+doTarsObjName="Obj"
+
+echo 'doTarsIP'${doTarsIP}
+echo 'doTarsType'${doTarsType}
+echo 'doTarsServerName'${doTarsServerName}
+echo 'doTarsServantName'${doTarsServantName}
+echo 'doTarsObjName'${doTarsObjName}
 
 mkdir src
 mv vendor src
