@@ -1,7 +1,5 @@
 #!/bin/sh
 
-cd dotars/tmp
-
 doTarsIP=$0
 doTarsType=$1
 doTarsServerName=$2
