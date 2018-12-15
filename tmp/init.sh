@@ -6,7 +6,6 @@ doTarsServerName=$2
 doTarsServantName=$3
 doTarsObjName=$4
 
-cd ../
 mkdir src
 mv vendor src
 
