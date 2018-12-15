@@ -2,11 +2,11 @@
 
 cd dotars/tmp
 
-doTarsIP="192.168.163.128"
-doTarsType="server"
-doTarsServerName="Topic"
-doTarsServantName="Server"
-doTarsObjName="Obj"
+doTarsIP=$0
+doTarsType=$1
+doTarsServerName=$2
+doTarsServantName=$3
+doTarsObjName=$4
 
 cd ../
 mkdir src
