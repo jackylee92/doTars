@@ -1,10 +1,10 @@
 #!/bin/sh
 
-doTarsIP=$0
-doTarsType=$1
-doTarsServerName=$2
-doTarsServantName=$3
-doTarsObjName=$4
+doTarsIP=$1
+doTarsType=$2
+doTarsServerName=$3
+doTarsServantName=$4
+doTarsObjName=$5
 echo "1:"`pwd`
 
 # 首字母转大写
