@@ -65,7 +65,7 @@ if [ ${doTarsType} == "server" ];then
 
     cd ../src/servant/${doTarsServerName}/${doTarsServantName}/${doTarsObjName}
     baseImplaceClassFileName=`ls *php`
-    if [ ! -n "${base_implace_class_file_name}" ];then
+    if [ ! -n "${baseImplaceClassFileName}" ];then
         echo "[ ERROR ] : tars文件错误，未生成接口文件，请删除项目重试！"
         exit 0
     fi
