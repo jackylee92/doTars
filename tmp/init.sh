@@ -86,7 +86,7 @@ if [ ${doTarsType} == "server" ];then
     echo "13:"`pwd`
 
     baseImplaceClassFileName=`echo $baseImplaceClassFileName | sed 's/.php//g'`
-    doTarsFunctionBody = `sed -n '/{/,/}/p' SearchServant.php | grep -Ev '(^interface|}$)' | cut -f 1,2 |  sed  "s/\;/\r\n        {\r\n        \}/g"`
+    doTarsFunctionBody=`sed -n '/{/,/}/p' SearchServant.php | grep -Ev '(^interface|}$)' | cut -f 1,2 |  sed  "s/\;/\r\n        {\r\n        \}/g"`
 
     #doTarsServantImplName=`echo $baseImplaceClassFileName | sed 's/$/Impl/g'`
 
