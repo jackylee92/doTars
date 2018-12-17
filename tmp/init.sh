@@ -31,7 +31,7 @@ mv vendor src
 echo 6
 
 if [ ${doTarsType} == "server" ];then
-    echp 7
+    echo 7
     cd tmp/src/server
     mv ./* ../../../src/
     cd ../../
@@ -53,7 +53,7 @@ fi
 cd ../
 
 echo "pwd :"`pwd`
-echp 9
+echo 9
 
 sed -i "s/\${doTarsIP}/${doTarsIP}/g" `grep '\${doTarsIP}' -rl ./tars/*`
 sed -i "s/\${doTarsServerName}/${doTarsServerName}/g" `grep '\${doTarsServerName}' -rl ./tars/*`
