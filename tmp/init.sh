@@ -5,18 +5,18 @@ doTarsType=$1
 doTarsServerName=$2
 doTarsServantName=$3
 doTarsObjName=$4
-echo 1
+echo "1:"`pwd`
 
 # 首字母转大写
 doTarsServerName=`echo "$doTarsServerName" | awk '{for (i=1;i<=NF;i++)printf toupper(substr($i,0,1))substr($i,2,length($i))" ";printf "\n"}' `
 doTarsServerName=`echo "$doTarsServerName" | sed 's/ //g'`
-echo 2
+echo "2:"`pwd`
 doTarsServantName=`echo "$doTarsServantName" | awk '{for (i=1;i<=NF;i++)printf toupper(substr($i,0,1))substr($i,2,length($i))" ";printf "\n"}' `
 doTarsServantName=`echo "$doTarsServantName" | sed 's/ //g'`
-echo 3
+echo "3:"`pwd`
 doTarsObjName=`echo "$doTarsObjName" | awk '{for (i=1;i<=NF;i++)printf toupper(substr($i,0,1))substr($i,2,length($i))" ";printf "\n"}' `
 doTarsObjName=`echo "$doTarsObjName" | sed 's/ //g'`
-echo 4
+echo "4:"`pwd`
 
 
 echo 'doTarsIP: '${doTarsIP}
@@ -26,12 +26,12 @@ echo 'doTarsServantName: '${doTarsServantName}
 echo 'doTarsObjName: '${doTarsObjName}
 
 mkdir src
-echo 5
+echo "5:"`pwd`
 mv vendor src
-echo 6
+echo "6:"`pwd`
 
 if [ ${doTarsType} == "server" ];then
-    echo 7
+    echo "7:"`pwd`
     cd tmp/src/server
     mv ./* ../../../src/
     cd ../../
@@ -41,7 +41,7 @@ if [ ${doTarsType} == "server" ];then
 fi
 
 if [ ${doTarsType} == "client" ];then
-    echo 8
+    echo "8:"`pwd`
     cd tmp/src/client
     mv ./* ../../../src/
     cd ../../
@@ -52,26 +52,25 @@ fi
 
 cd ../
 
-echo "pwd :"`pwd`
-echo 9
+echo "9:"`pwd`
 
 sed -i "s/\${doTarsIP}/${doTarsIP}/g" `grep '\${doTarsIP}' -rl ./tars/*`
 sed -i "s/\${doTarsServerName}/${doTarsServerName}/g" `grep '\${doTarsServerName}' -rl ./tars/*`
 sed -i "s/\${doTarsServantName}/${doTarsServantName}/g" `grep '\${doTarsServantName}' -rl ./tars/*`
 sed -i "s/\${doTarsObjName}/${doTarsObjName}/g" `grep '\${doTarsObjName}' -rl ./tars/*`
 
-echo 10
+echo "10:"`pwd`
 
 sed -i "s/\${doTarsIP}/${doTarsIP}/g" `grep '\${doTarsIP}' -rl ./src/*`
 sed -i "s/\${doTarsServerName}/${doTarsServerName}/g" `grep '\${doTarsServerName}' -rl ./src/*`
 sed -i "s/\${doTarsServantName}/${doTarsServantName}/g" `grep '\${doTarsServantName}' -rl ./src/*`
 sed -i "s/\${doTarsObjName}/${doTarsObjName}/g" `grep '\${doTarsObjName}' -rl ./src/*`
-echo 11
+echo "11:"`pwd`
 
 # -------------client over ----------------
 
 if [ ${doTarsType} == "server" ];then
-    echo 12
+    echo "12:"`pwd`
     tarsFileName=${doTarsServerName}${doTarsServantName}.tars
     echo "正在copy[${tarsFileName}]文件。。。"
     mv ../${tarsFileName} tars/
@@ -84,7 +83,7 @@ if [ ${doTarsType} == "server" ];then
         echo "[ ERROR ] : tars文件错误，未生成接口文件，请删除项目重试！"
         exit 0
     fi
-    echo 13
+    echo "13:"`pwd`
 
     baseImplaceClassFileName=`echo $baseImplaceClassFileName | sed 's/.php//g'`
 
