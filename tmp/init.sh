@@ -97,9 +97,7 @@ if [ ${doTarsType} == "server" ];then
     sed -i "s/\${doTarsServantImplName}/${baseImplaceClassFileName}/g" ./src/impl/IndexServantImpl.php
     
     echo "15:"`pwd`
-    sed -i "s/\${doTarsFunctionBody}/${doTarsFunctionBody}/g" ./src/impl/IndexServantImpl.php
-
-    sed -i "s#\${doTarsFunctionBody}(echo ${doTarsFunctionBody})#g" ./src/impl/IndexServantImpl.php
+    sed -i "s#\${doTarsFunctionBody}#$(echo ${doTarsFunctionBody})#g" ./src/impl/IndexServantImpl.php
     sed -i "s/\[:space:\]/    /g" ./src/impl/IndexServantImpl.php
 
 
