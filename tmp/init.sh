@@ -73,7 +73,7 @@ if [ ${doTarsType} == "server" ];then
     echo "12:"`pwd`
     tarsFileName=${doTarsServerName}${doTarsServantName}.tars
     echo "正在copy[${tarsFileName}]文件。。。"
-    mv ../${tarsFileName} tars/
+    cp ../${tarsFileName} tars/
     cd tars
     php ../src/vendor/phptars/tars2php/src/tars2php.php ./tars.proto.php
 
@@ -90,6 +90,7 @@ if [ ${doTarsType} == "server" ];then
 
     baseImplaceClassFileName=`echo $baseImplaceClassFileName | sed 's/.php//g'`
     echo "14:${doTarsFunctionBody}"
+    echo "14-1:${doTarsFunctionUser}"
 
     #doTarsServantImplName=`echo $baseImplaceClassFileName | sed 's/$/Impl/g'`
 
@@ -99,7 +100,7 @@ if [ ${doTarsType} == "server" ];then
     
     echo "15:"`pwd`
     sed -i "s#\${doTarsFunctionBody}#$(echo ${doTarsFunctionBody})#g" ./src/impl/IndexServantImpl.php
-    sed -i "/implements/i\\$(echo $ab)" ./src/impl/IndexServantImpl.php
+    sed -i "/implements/i\\$(echo $doTarsFunctionUse)" ./src/impl/IndexServantImpl.php
     sed -i "s/\[:space:\]/ /g" ./src/impl/IndexServantImpl.php
 
 
