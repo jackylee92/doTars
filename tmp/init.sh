@@ -102,15 +102,6 @@ if [ ${doTarsType} == "server" ];then
     sed -i "s#\${doTarsFunctionBody}#$(echo ${doTarsFunctionBody})#g" ./src/impl/IndexServantImpl.php
     sed -i "/implements/i\\$(echo $doTarsFunctionUse)" ./src/impl/IndexServantImpl.php
     sed -i "s/\[:space:\]/ /g" ./src/impl/IndexServantImpl.php
-
-
-
-
-
-
-
-
-
-
-
 fi
+
+mv composer.* src/
