@@ -1,5 +1,12 @@
 #!/bin/sh
 
+del_file()
+{
+  echo "* * * 您终端了操作，项目生成失败 * * *"
+  rm -rf tmp
+  exit 1
+}
+trap del_file 2
 doTarsIP=$1
 doTarsType=$2
 doTarsServerName=$3
