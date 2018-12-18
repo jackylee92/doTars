@@ -85,7 +85,8 @@ if [ ${doTarsType} == "server" ];then
     fi
     echo "13:"`pwd`
 
-    doTarsFunctionBody=$(cat ${baseImplaceClassFileName} | sed 's#\/#\\\/#g' | sed 's#\$#\$#g' | sed 's#\*#\\\*#g' | sed -n '/{/,/}/p' | grep -Ev '(^interface|}$)' | cut -f 1,2 |  sed  "s/;/{}/g" | sed -r 's@$@ '\\\\n[:space:]'@')
+    doTarsFunctionBody=$(cat ${baseImplaceClassFileName} | sed 's#\/#\\\/#g' | sed 's#\$#\$#g' | sed 's#\*#\\\*#g' | sed -n '/{/,/}/p' | grep -Ev '(^interface|}$)' | cut -f 1,2 |  sed  "s/;/{}/g" | sed -r 's@$@ '\\\\n[:space:][:space:][:space:][:space:]'@')
+    doTarsFunctionUse=$(grep -E 'use' ${baseImplaceClassFileName} | sed 's#\/#\\\/#g' | sed 's#\$#\$#g' | sed 's#\*#\\\*#g' | sed 's#\\#\\\\#g' | sed 's# #[:space:]#g' | sed -r 's@$@ '\\\\n'@')
 
     baseImplaceClassFileName=`echo $baseImplaceClassFileName | sed 's/.php//g'`
     echo "14:${doTarsFunctionBody}"
@@ -94,11 +95,12 @@ if [ ${doTarsType} == "server" ];then
 
     cd ../../../../..
 
-    sed -i "s/\${doTarsServantImplName}/${baseImplaceClassFileName}/g" ./src/impl/IndexServantImpl.php
+    sed -i "s/\${doTarsServantImplName}/${baseImplaceClassFileName}/g"  `grep '\${doTarsServantImplName}' -rl ./src/*`
     
     echo "15:"`pwd`
     sed -i "s#\${doTarsFunctionBody}#$(echo ${doTarsFunctionBody})#g" ./src/impl/IndexServantImpl.php
-    sed -i "s/\[:space:\]/    /g" ./src/impl/IndexServantImpl.php
+    sed -i "/implements/i\\$(echo $ab)" ./src/impl/IndexServantImpl.php
+    sed -i "s/\[:space:\]/ /g" ./src/impl/IndexServantImpl.php
 
 
 
