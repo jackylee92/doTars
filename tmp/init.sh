@@ -77,8 +77,8 @@ if [ ${doTarsType} == "server" ];then
         exit 0
     fi
 
-    doTarsFunctionBody=$(cat ${baseImplaceClassFileName} | sed 's#\/#\\\/#g' | sed 's#\$#\$#g' | sed 's#\*#\\\*#g' | sed -n '/{/,/}/p' | grep -Ev '(^interface|}$)' | cut -f 1,2 |  sed  "s/;/{}/g" | sed -r 's@$@ '\\\\n[:space:][:space:][:space:][:space:]'@')
-    doTarsFunctionUse=$(grep -E 'use' ${baseImplaceClassFileName} | sed 's#\/#\\\/#g' | sed 's#\$#\$#g' | sed 's#\*#\\\*#g' | sed 's#\\#\\\\#g' | sed 's# #[:space:]#g' | sed -r 's@$@ '\\\\n'@')
+    doTarsFunctionBody=$(cat ${baseImplaceClassFileName} | sed 's#\/#\\\/#g' | sed 's#\$#\$#g' | sed 's#\*#\\\*#g' | sed 's#\&#\\\&#g' | sed -n '/{/,/}/p' | grep -Ev '(^interface|}$)' | cut -f 1,2 |  sed  "s/;/{}/g" | sed -r 's@$@ '\\\\n[:space:][:space:][:space:][:space:]'@')
+    doTarsFunctionUse=$(grep -E 'use' ${baseImplaceClassFileName} | sed 's#\/#\\\/#g' | sed 's#\$#\$#g' | sed 's#\*#\\\*#g' | sed 's#\\#\\\\#g' | sed 's#\&#\\\&#g' | sed 's# #[:space:]#g' | sed -r 's@$@ '\\\\n'@')
 
     baseImplaceClassFileName=`echo $baseImplaceClassFileName | sed 's/.php//g'`
 
