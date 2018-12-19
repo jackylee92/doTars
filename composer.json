@@ -11,7 +11,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "ljd/dotars-init": "v15",
+        "ljd/dotars-init": "v16",
         "phptars/tars-server": "~0.1",
         "phptars/tars-deploy": "~0.1",
         "phptars/tars2php": "~0.1",
@@ -20,6 +20,7 @@
     },
     "scripts" : {
         "post-create-project-cmd": "dotars\\DotarsInit::index",
+        "servant" : "dotars\\DotarsInit::servant",
         "deploy" : "\\Tars\\deploy\\Deploy::run"
     },
     "autoload": {

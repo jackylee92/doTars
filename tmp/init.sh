@@ -91,4 +91,6 @@ if [ ${doTarsType} == "server" ];then
     sed -i "s/\[:space:\]/ /g" ./src/impl/IndexServantImpl.php
 fi
 
+echo "[ Success ] : 创建成功！！！！"
+
 mv composer.* src/
