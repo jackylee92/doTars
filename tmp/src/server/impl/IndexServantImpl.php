@@ -6,6 +6,6 @@ ${doTarsUseCode}
 
 class IndexServantImpl implements ${doTarsServantImplName}
 {
-    ${doTarsFunctionBody}
+${doTarsFunctionBody}
 }
 ?>

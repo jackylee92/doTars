@@ -1,8 +1,8 @@
 <?php
 
 namespace  src\service;
-use  SearchSyncJob\conf\RedisConf;
-use  SearchSyncJob\libs\Redis;
+use  src\conf\RedisConf;
+use  src\libs\Redis;
 
 /**
  * 基类
