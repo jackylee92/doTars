@@ -1,0 +1,436 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Basic	src/client/service/Basic.php	/^class Basic$/;"	c
+Basic	src/server/service/Basic.php	/^class Basic$/;"	c
+Common	src/client/common/Common.php	/^class Common extends Controller$/;"	c
+Common	src/server/common/Common.php	/^class Common extends Controller$/;"	c
+Controller	src/client/component/Controller.php	/^class Controller$/;"	c
+DbMysqli	src/client/libs/DbMysqli.php	/^class DbMysqli extends \\dbObject$/;"	c
+DbMysqli	src/server/libs/DbMysqli.php	/^class DbMysqli extends \\dbObject$/;"	c
+ENVConf	src/client/conf/ENVConf.php	/^class ENVConf$/;"	c
+ENVConf	src/server/conf/ENVConf.php	/^class ENVConf$/;"	c
+IndexController	src/client/controller/IndexController.php	/^class IndexController extends Controller$/;"	c
+IndexServantImpl	src/server/impl/IndexServantImpl.php	/^class IndexServantImpl implements ${doTarsServantImplName}$/;"	c
+IndexTimer	src/client/timer/IndexTimer.php	/^class IndexTimer$/;"	c
+Loader	src/client/libs/Loader.php	/^class Loader$/;"	c
+Loader	src/server/libs/Loader.php	/^class Loader$/;"	c
+Mysql	src/client/libs/Mysql.php	/^class Mysql extends \\dbObject$/;"	c
+Mysql	src/server/libs/Mysql.php	/^class Mysql extends \\dbObject$/;"	c
+Redis	src/client/libs/Redis.php	/^class Redis$/;"	c
+Redis	src/server/libs/Redis.php	/^class Redis$/;"	c
+User	src/client/model/mysql/users/User.php	/^class User extends Mysql$/;"	c
+User	src/server/model/mysql/users/User.php	/^class User extends Mysql$/;"	c
+__clone	src/client/libs/Redis.php	/^    private function __clone()$/;"	f
+__clone	src/server/libs/Redis.php	/^    private function __clone()$/;"	f
+__construct	src/client/component/Controller.php	/^    public function __construct(Request $request, Response $response)$/;"	f
+__construct	src/client/controller/IndexController.php	/^    public function __construct(Request $request, Response $response)$/;"	f
+__construct	src/client/libs/DbMysqli.php	/^    public function __construct($connection = 'default')$/;"	f
+__construct	src/client/libs/Redis.php	/^    private function __construct($config, $attr = [])$/;"	f
+__construct	src/client/timer/IndexTimer.php	/^    public function __construct()$/;"	f
+__construct	src/server/libs/DbMysqli.php	/^    public function __construct($connection = 'default')$/;"	f
+__construct	src/server/libs/Redis.php	/^    private function __construct($config, $attr = [])$/;"	f
+__destruct	src/client/libs/Redis.php	/^     * public function __destruct()$/;"	f
+__destruct	src/server/libs/Redis.php	/^     * public function __destruct()$/;"	f
+__set	src/client/libs/Redis.php	/^    function __set($propertyName, $value)$/;"	f
+__set	src/server/libs/Redis.php	/^    function __set($propertyName, $value)$/;"	f
+_fileds	src/client/common/Common.php	/^        $_fileds = [];$/;"	v
+_fileds	src/server/common/Common.php	/^        $_fileds = [];$/;"	v
+_instance	src/client/libs/Redis.php	/^    static private $_instance = [];$/;"	v
+_instance	src/server/libs/Redis.php	/^    static private $_instance = [];$/;"	v
+_str	src/client/common/Common.php	/^        $_str = ucwords(str_replace('_', ' ', $str));$/;"	v
+_str	src/server/common/Common.php	/^        $_str = ucwords(str_replace('_', ' ', $str));$/;"	v
+action	src/client/common/Common.php	/^    public static function convertFields($fields = [], $action = 'tohump')$/;"	v
+action	src/server/common/Common.php	/^    public static function convertFields($fields = [], $action = 'tohump')$/;"	v
+actionIndex	src/client/controller/IndexController.php	/^    public function actionIndex()$/;"	f
+arr	src/client/libs/Redis.php	/^            $arr = $value;$/;"	v
+arr	src/client/libs/Redis.php	/^            $arr = [$value];$/;"	v
+arr	src/client/libs/Redis.php	/^        $arr = [];$/;"	v
+arr	src/server/libs/Redis.php	/^            $arr = $value;$/;"	v
+arr	src/server/libs/Redis.php	/^            $arr = [$value];$/;"	v
+arr	src/server/libs/Redis.php	/^        $arr = [];$/;"	v
+attr	src/client/libs/Redis.php	/^        $this->attr = array_merge($this->attr, $attr);$/;"	v
+attr	src/client/libs/Redis.php	/^        \/\/     $attr = [];$/;"	v
+attr	src/client/libs/Redis.php	/^    private function __construct($config, $attr = [])$/;"	v
+attr	src/client/libs/Redis.php	/^    protected $attr = [$/;"	v
+attr	src/client/libs/Redis.php	/^    public static function getInstance($config, $attr = [])$/;"	v
+attr	src/server/libs/Redis.php	/^        $this->attr = array_merge($this->attr, $attr);$/;"	v
+attr	src/server/libs/Redis.php	/^        \/\/     $attr = [];$/;"	v
+attr	src/server/libs/Redis.php	/^    private function __construct($config, $attr = [])$/;"	v
+attr	src/server/libs/Redis.php	/^    protected $attr = [$/;"	v
+attr	src/server/libs/Redis.php	/^    public static function getInstance($config, $attr = [])$/;"	v
+auth	src/client/libs/Redis.php	/^                $this->auth = $config['auth'];$/;"	v
+auth	src/client/libs/Redis.php	/^    protected $auth;$/;"	v
+auth	src/client/libs/Redis.php	/^    public function auth($auth)$/;"	f
+auth	src/server/libs/Redis.php	/^                $this->auth = $config['auth'];$/;"	v
+auth	src/server/libs/Redis.php	/^    protected $auth;$/;"	v
+auth	src/server/libs/Redis.php	/^    public function auth($auth)$/;"	f
+bgSave	src/client/libs/Redis.php	/^    public function bgSave()$/;"	f
+bgSave	src/server/libs/Redis.php	/^    public function bgSave()$/;"	f
+class	src/client/index.php	/^$class = new Command($cmd, $config_path);$/;"	v
+class	src/server/index.php	/^$class = new Command($cmd, $config_path);$/;"	v
+close	src/client/libs/Redis.php	/^    public function close()$/;"	f
+close	src/server/libs/Redis.php	/^    public function close()$/;"	f
+closeAll	src/client/libs/Redis.php	/^    public static function closeAll()$/;"	f
+closeAll	src/server/libs/Redis.php	/^    public static function closeAll()$/;"	f
+cmd	src/client/index.php	/^$cmd = strtolower($argv[2]);$/;"	v
+cmd	src/client/libs/Redis.php	/^        $cmd = "{$redisStr} KEYS \\"{$keys}\\" | xargs {$redisStr} del";$/;"	v
+cmd	src/server/index.php	/^$cmd = strtolower($argv[2]);$/;"	v
+cmd	src/server/libs/Redis.php	/^        $cmd = "{$redisStr} KEYS \\"{$keys}\\" | xargs {$redisStr} del";$/;"	v
+cmdArr	src/client/libs/Redis.php	/^        $cmdArr = [$/;"	v
+cmdArr	src/server/libs/Redis.php	/^        $cmdArr = [$/;"	v
+code	src/client/common/Common.php	/^            $code = $e->getCode();$/;"	v
+code	src/server/common/Common.php	/^            $code = $e->getCode();$/;"	v
+config	src/client/common/Common.php	/^            $config = new CommunicatorConfig();$/;"	v
+config	src/server/common/Common.php	/^            $config = new CommunicatorConfig();$/;"	v
+config_path	src/client/index.php	/^$config_path = $argv[1];$/;"	v
+config_path	src/client/index.php	/^$config_path = substr($config_path,  + 9);$/;"	v
+config_path	src/server/index.php	/^$config_path = $argv[1];$/;"	v
+config_path	src/server/index.php	/^$config_path = substr($config_path,  + 9);$/;"	v
+convertFields	src/client/common/Common.php	/^    public static function convertFields($fields = [], $action = 'tohump')$/;"	f
+convertFields	src/server/common/Common.php	/^    public static function convertFields($fields = [], $action = 'tohump')$/;"	f
+cookie	src/client/component/Controller.php	/^    public function cookie($key, $value = '', $expire = 0, $path = '\/', $domain = '', $secure = false, $httponly = false)$/;"	f
+data	src/client/libs/Mysql.php	/^            $data = $this->db->query($sql);$/;"	v
+data	src/client/libs/Mysql.php	/^        $data = $this->db->where($where,$param)->get($this->dbTable);$/;"	v
+data	src/server/libs/Mysql.php	/^            $data = $this->db->query($sql);$/;"	v
+data	src/server/libs/Mysql.php	/^        $data = $this->db->where($where,$param)->get($this->dbTable);$/;"	v
+db	src/client/libs/DbMysqli.php	/^        $db = new \\MysqliDb($defaultConf);$/;"	v
+db	src/client/libs/DbMysqli.php	/^        $this->db = $db;$/;"	v
+db	src/client/libs/DbMysqli.php	/^    protected $db = 'default';$/;"	v
+db	src/client/libs/DbMysqli.php	/^    public static function db():\\MysqliDb$/;"	f
+db	src/server/libs/DbMysqli.php	/^        $db = new \\MysqliDb($defaultConf);$/;"	v
+db	src/server/libs/DbMysqli.php	/^        $this->db = $db;$/;"	v
+db	src/server/libs/DbMysqli.php	/^    protected $db = 'default';$/;"	v
+db	src/server/libs/DbMysqli.php	/^    public static function db():\\MysqliDb$/;"	f
+dbFields	src/client/model/mysql/users/User.php	/^    protected $dbFields = Array($/;"	v
+dbFields	src/server/model/mysql/users/User.php	/^    protected $dbFields = Array($/;"	v
+dbId	src/client/libs/Redis.php	/^        $this->dbId = $dbId;$/;"	v
+dbId	src/client/libs/Redis.php	/^        \/\/     $dbId = $attr;$/;"	v
+dbId	src/client/libs/Redis.php	/^    protected $dbId = 0;$/;"	v
+dbId	src/server/libs/Redis.php	/^        $this->dbId = $dbId;$/;"	v
+dbId	src/server/libs/Redis.php	/^        \/\/     $dbId = $attr;$/;"	v
+dbId	src/server/libs/Redis.php	/^    protected $dbId = 0;$/;"	v
+dbName	src/client/libs/DbMysqli.php	/^        foreach (DBConf::$config as $dbName => $conn) {$/;"	v
+dbName	src/client/model/mysql/users/User.php	/^    protected $dbName = "default";$/;"	v
+dbName	src/server/libs/DbMysqli.php	/^        foreach (DBConf::$config as $dbName => $conn) {$/;"	v
+dbName	src/server/model/mysql/users/User.php	/^    protected $dbName = "default";$/;"	v
+dbSize	src/client/libs/Redis.php	/^    public function dbSize()$/;"	f
+dbSize	src/server/libs/Redis.php	/^    public function dbSize()$/;"	f
+dbTable	src/client/model/mysql/users/User.php	/^    protected $dbTable = "user";$/;"	v
+dbTable	src/server/model/mysql/users/User.php	/^    protected $dbTable = "user";$/;"	v
+defaultConf	src/client/libs/DbMysqli.php	/^        $defaultConf = DBConf::$config[$connection];$/;"	v
+defaultConf	src/server/libs/DbMysqli.php	/^        $defaultConf = DBConf::$config[$connection];$/;"	v
+del	src/client/libs/Redis.php	/^    public function del($key)$/;"	f
+del	src/server/libs/Redis.php	/^    public function del($key)$/;"	f
+delKeys	src/client/libs/Redis.php	/^    public function delKeys($keys, $dbId)$/;"	f
+delKeys	src/server/libs/Redis.php	/^    public function delKeys($keys, $dbId)$/;"	f
+delNum	src/client/libs/Redis.php	/^        $delNum = 0;$/;"	v
+delNum	src/server/libs/Redis.php	/^        $delNum = 0;$/;"	v
+del_file	init.sh	/^del_file()$/;"	f
+deleteByWhere	src/client/libs/Mysql.php	/^    public function deleteByWhere($where,$param)$/;"	f
+deleteByWhere	src/server/libs/Mysql.php	/^    public function deleteByWhere($where,$param)$/;"	f
+discard	src/client/libs/Redis.php	/^    public function discard()$/;"	f
+discard	src/server/libs/Redis.php	/^    public function discard()$/;"	f
+doSql	src/client/libs/Mysql.php	/^    public function doSql($sql)$/;"	f
+doSql	src/server/libs/Mysql.php	/^    public function doSql($sql)$/;"	f
+error_msg	src/client/libs/Mysql.php	/^    public $error_msg;$/;"	v
+error_msg	src/server/libs/Mysql.php	/^    public $error_msg;$/;"	v
+exec	src/client/libs/Redis.php	/^    public function exec()$/;"	f
+exec	src/server/libs/Redis.php	/^    public function exec()$/;"	f
+execute	src/client/timer/IndexTimer.php	/^    public function execute() {$/;"	f
+exists	src/client/libs/Redis.php	/^    public function exists($key)$/;"	f
+exists	src/server/libs/Redis.php	/^    public function exists($key)$/;"	f
+expire	src/client/libs/Redis.php	/^    public function expire($key, $expire)$/;"	f
+expire	src/server/libs/Redis.php	/^    public function expire($key, $expire)$/;"	f
+expireTime	src/client/libs/Redis.php	/^        $this->expireTime = time() + $this->attr['timeout'];$/;"	v
+expireTime	src/client/libs/Redis.php	/^    protected $expireTime;$/;"	v
+expireTime	src/server/libs/Redis.php	/^        $this->expireTime = time() + $this->attr['timeout'];$/;"	v
+expireTime	src/server/libs/Redis.php	/^    protected $expireTime;$/;"	v
+exprieAt	src/client/libs/Redis.php	/^    public function exprieAt($key, $time)$/;"	f
+exprieAt	src/server/libs/Redis.php	/^    public function exprieAt($key, $time)$/;"	f
+field	src/client/libs/Redis.php	/^            $field = explode(',', $field);$/;"	v
+field	src/server/libs/Redis.php	/^            $field = explode(',', $field);$/;"	v
+fieldArr	src/client/libs/Redis.php	/^        $fieldArr = explode(',', $field);$/;"	v
+fieldArr	src/server/libs/Redis.php	/^        $fieldArr = explode(',', $field);$/;"	v
+findDataByWhere	src/client/libs/Mysql.php	/^    public function findDataByWhere($where,$param)$/;"	f
+findDataByWhere	src/server/libs/Mysql.php	/^    public function findDataByWhere($where,$param)$/;"	f
+flushDB	src/client/libs/Redis.php	/^    public function flushDB()$/;"	f
+flushDB	src/server/libs/Redis.php	/^    public function flushDB()$/;"	f
+get	src/client/libs/Redis.php	/^    public function get($key)$/;"	f
+get	src/server/libs/Redis.php	/^    public function get($key)$/;"	f
+getAllData	src/client/libs/Mysql.php	/^    public function getAllData()$/;"	f
+getAllData	src/server/libs/Mysql.php	/^    public function getAllData()$/;"	f
+getAuth	src/client/libs/Redis.php	/^    public function getAuth()$/;"	f
+getAuth	src/server/libs/Redis.php	/^    public function getAuth()$/;"	f
+getConnInfo	src/client/libs/Redis.php	/^    public function getConnInfo()$/;"	f
+getConnInfo	src/server/libs/Redis.php	/^    public function getConnInfo()$/;"	f
+getDataByWhere	src/client/libs/Mysql.php	/^    public function getDataByWhere($where,$param)$/;"	f
+getDataByWhere	src/server/libs/Mysql.php	/^    public function getDataByWhere($where,$param)$/;"	f
+getDbId	src/client/libs/Redis.php	/^    public function getDbId()$/;"	f
+getDbId	src/server/libs/Redis.php	/^    public function getDbId()$/;"	f
+getHost	src/client/libs/Redis.php	/^    public function getHost()$/;"	f
+getHost	src/server/libs/Redis.php	/^    public function getHost()$/;"	f
+getInstance	src/client/libs/Redis.php	/^    public static function getInstance($config, $attr = [])$/;"	f
+getInstance	src/server/libs/Redis.php	/^    public static function getInstance($config, $attr = [])$/;"	f
+getLastSql	src/client/libs/Mysql.php	/^    public function getLastSql() $/;"	f
+getLastSql	src/server/libs/Mysql.php	/^    public function getLastSql() $/;"	f
+getLastSqlError	src/client/libs/Mysql.php	/^    public function getLastSqlError()$/;"	f
+getLastSqlError	src/server/libs/Mysql.php	/^    public function getLastSqlError()$/;"	f
+getLoader	src/client/libs/Loader.php	/^    public static function getLoader()$/;"	f
+getLoader	src/server/libs/Loader.php	/^    public static function getLoader()$/;"	f
+getModelDb	src/client/libs/Mysql.php	/^    public function getModelDb()$/;"	f
+getModelDb	src/server/libs/Mysql.php	/^    public function getModelDb()$/;"	f
+getPort	src/client/libs/Redis.php	/^    public function getPort()$/;"	f
+getPort	src/server/libs/Redis.php	/^    public function getPort()$/;"	f
+getRedis	src/client/libs/Redis.php	/^    public function getRedis()$/;"	f
+getRedis	src/client/service/Basic.php	/^    public static function getRedis()$/;"	f
+getRedis	src/server/libs/Redis.php	/^    public function getRedis()$/;"	f
+getRedis	src/server/service/Basic.php	/^    public static function getRedis()$/;"	f
+getRequest	src/client/component/Controller.php	/^    public function getRequest()$/;"	f
+getResponse	src/client/component/Controller.php	/^    public function getResponse()$/;"	f
+getServant	src/client/common/Common.php	/^    public static function getServant($nameSpace,$locator=false,$socketModuleName=false,$socketMode=false)$/;"	f
+getServant	src/server/common/Common.php	/^    public static function getServant($nameSpace,$locator=false,$socketModuleName=false,$socketMode=false)$/;"	f
+getTarsConf	src/client/conf/ENVConf.php	/^    public static function getTarsConf()$/;"	f
+getTarsConf	src/server/conf/ENVConf.php	/^    public static function getTarsConf()$/;"	f
+hExists	src/client/libs/Redis.php	/^    public function hExists($key, $field)$/;"	f
+hExists	src/server/libs/Redis.php	/^    public function hExists($key, $field)$/;"	f
+hGet	src/client/libs/Redis.php	/^    public function hGet($key, $field)$/;"	f
+hGet	src/server/libs/Redis.php	/^    public function hGet($key, $field)$/;"	f
+hGetAll	src/client/libs/Redis.php	/^    public function hGetAll($key)$/;"	f
+hGetAll	src/server/libs/Redis.php	/^    public function hGetAll($key)$/;"	f
+hIncrBy	src/client/libs/Redis.php	/^    public function hIncrBy($key, $field, $value)$/;"	f
+hIncrBy	src/server/libs/Redis.php	/^    public function hIncrBy($key, $field, $value)$/;"	f
+hKeys	src/client/libs/Redis.php	/^    public function hKeys($key)$/;"	f
+hKeys	src/server/libs/Redis.php	/^    public function hKeys($key)$/;"	f
+hLen	src/client/libs/Redis.php	/^    public function hLen($key)$/;"	f
+hLen	src/server/libs/Redis.php	/^    public function hLen($key)$/;"	f
+hMget	src/client/libs/Redis.php	/^    public function hMget($key, $field)$/;"	f
+hMget	src/server/libs/Redis.php	/^    public function hMget($key, $field)$/;"	f
+hMset	src/client/libs/Redis.php	/^    public function hMset($key, $value)$/;"	f
+hMset	src/server/libs/Redis.php	/^    public function hMset($key, $value)$/;"	f
+hSet	src/client/libs/Redis.php	/^    public function hSet($key, $field, $value)$/;"	f
+hSet	src/server/libs/Redis.php	/^    public function hSet($key, $field, $value)$/;"	f
+hSetNx	src/client/libs/Redis.php	/^    public function hSetNx($key, $field, $value)$/;"	f
+hSetNx	src/server/libs/Redis.php	/^    public function hSetNx($key, $field, $value)$/;"	f
+hVals	src/client/libs/Redis.php	/^    public function hVals($key)$/;"	f
+hVals	src/server/libs/Redis.php	/^    public function hVals($key)$/;"	f
+hashAll	src/client/libs/Redis.php	/^    public function hashAll($prefix, $ids)$/;"	f
+hashAll	src/server/libs/Redis.php	/^    public function hashAll($prefix, $ids)$/;"	f
+hdel	src/client/libs/Redis.php	/^    public function hdel($key, $field)$/;"	f
+hdel	src/server/libs/Redis.php	/^    public function hdel($key, $field)$/;"	f
+header	src/client/component/Controller.php	/^    public function header($key, $value)$/;"	f
+host	src/client/libs/Redis.php	/^            $this->host = $config['host'];$/;"	v
+host	src/client/libs/Redis.php	/^    protected $host;$/;"	v
+host	src/server/libs/Redis.php	/^            $this->host = $config['host'];$/;"	v
+host	src/server/libs/Redis.php	/^    protected $host;$/;"	v
+humpToUndline	src/client/common/Common.php	/^    public static function humpToUndline($str = '')$/;"	f
+humpToUndline	src/server/common/Common.php	/^    public static function humpToUndline($str = '')$/;"	f
+ids	src/client/libs/Redis.php	/^            $ids = explode(',', $ids);$/;"	v
+ids	src/server/libs/Redis.php	/^            $ids = explode(',', $ids);$/;"	v
+incr	src/client/libs/Redis.php	/^    public function incr($key)$/;"	f
+incr	src/server/libs/Redis.php	/^    public function incr($key)$/;"	f
+info	src/client/libs/Redis.php	/^    public function info()$/;"	f
+info	src/server/libs/Redis.php	/^    public function info()$/;"	f
+instance	src/client/libs/DbMysqli.php	/^        $instance = (new static);$/;"	v
+instance	src/server/libs/DbMysqli.php	/^        $instance = (new static);$/;"	v
+interval	src/client/timer/IndexTimer.php	/^        $this->interval = 3000; \/\/单位为毫秒$/;"	v
+interval	src/client/timer/IndexTimer.php	/^    public $interval;$/;"	v
+isRedisCluster	src/client/libs/Redis.php	/^        $this->isRedisCluster = $attr['isRedisCluster'] ?? 0;$/;"	v
+isRedisCluster	src/client/libs/Redis.php	/^    private $isRedisCluster = 0;$/;"	v
+isRedisCluster	src/server/libs/Redis.php	/^        $this->isRedisCluster = $attr['isRedisCluster'] ?? 0;$/;"	v
+isRedisCluster	src/server/libs/Redis.php	/^    private $isRedisCluster = 0;$/;"	v
+k	src/client/libs/Redis.php	/^        $k = md5(implode('', $config) . $attr['db_id']);$/;"	v
+k	src/client/libs/Redis.php	/^    private $k;$/;"	v
+k	src/server/libs/Redis.php	/^        $k = md5(implode('', $config) . $attr['db_id']);$/;"	v
+k	src/server/libs/Redis.php	/^    private $k;$/;"	v
+key	src/client/libs/Redis.php	/^            $key = $prefix . '.' . $id;$/;"	v
+key	src/client/libs/Redis.php	/^        $key = md5($msg);$/;"	v
+key	src/server/libs/Redis.php	/^            $key = $prefix . '.' . $id;$/;"	v
+key	src/server/libs/Redis.php	/^        $key = md5($msg);$/;"	v
+keys	src/client/libs/Redis.php	/^    public function keys($key)$/;"	f
+keys	src/server/libs/Redis.php	/^    public function keys($key)$/;"	f
+lIndex	src/client/libs/Redis.php	/^    public function lIndex($key, $index)$/;"	f
+lIndex	src/server/libs/Redis.php	/^    public function lIndex($key, $index)$/;"	f
+lLen	src/client/libs/Redis.php	/^    public function lLen($key)$/;"	f
+lLen	src/server/libs/Redis.php	/^    public function lLen($key)$/;"	f
+lPop	src/client/libs/Redis.php	/^    public function lPop($key)$/;"	f
+lPop	src/server/libs/Redis.php	/^    public function lPop($key)$/;"	f
+lPush	src/client/libs/Redis.php	/^    public function lPush($key, $value)$/;"	f
+lPush	src/server/libs/Redis.php	/^    public function lPush($key, $value)$/;"	f
+lPushx	src/client/libs/Redis.php	/^    public function lPushx($key, $value)$/;"	f
+lPushx	src/server/libs/Redis.php	/^    public function lPushx($key, $value)$/;"	f
+lRange	src/client/libs/Redis.php	/^    public function lRange($key, $start, $end)$/;"	f
+lRange	src/server/libs/Redis.php	/^    public function lRange($key, $start, $end)$/;"	f
+lRem	src/client/libs/Redis.php	/^    public function lRem($key, $count, $value)$/;"	f
+lRem	src/server/libs/Redis.php	/^    public function lRem($key, $count, $value)$/;"	f
+lSet	src/client/libs/Redis.php	/^    public function lSet($key, $index, $value)$/;"	f
+lSet	src/server/libs/Redis.php	/^    public function lSet($key, $index, $value)$/;"	f
+lastSave	src/client/libs/Redis.php	/^    public function lastSave()$/;"	f
+lastSave	src/server/libs/Redis.php	/^    public function lastSave()$/;"	f
+locator	src/client/common/Common.php	/^            $locator = ENVConf::$locator;$/;"	v
+locator	src/client/conf/ENVConf.php	/^    public static $locator = 'tars.tarsregistry.QueryObj@tcp -h ${doTarsIP} -p 17890';$/;"	v
+locator	src/server/common/Common.php	/^            $locator = ENVConf::$locator;$/;"	v
+locator	src/server/conf/ENVConf.php	/^    public static $locator = 'tars.tarsregistry.QueryObj@tcp -h ${doTarsIP} -p 17890';$/;"	v
+logInfo	src/client/common/Common.php	/^    public static function logInfo($content)$/;"	f
+logInfo	src/server/common/Common.php	/^    public static function logInfo($content)$/;"	f
+mset	src/client/libs/Redis.php	/^    public function mset($arr)$/;"	f
+mset	src/server/libs/Redis.php	/^    public function mset($arr)$/;"	f
+msg	src/client/common/Common.php	/^            $msg = $e->getMessage();$/;"	v
+msg	src/client/libs/Redis.php	/^            $msg = json_encode($msg);$/;"	v
+msg	src/server/common/Common.php	/^            $msg = $e->getMessage();$/;"	v
+msg	src/server/libs/Redis.php	/^            $msg = json_encode($msg);$/;"	v
+multi	src/client/libs/Redis.php	/^    public function multi($type = \\Redis::MULTI)$/;"	f
+multi	src/server/libs/Redis.php	/^    public function multi($type = \\Redis::MULTI)$/;"	f
+n	src/client/libs/Redis.php	/^        \/\/echo $n=$this->lRem($lkey, 0, $key)."\\n";$/;"	v
+n	src/server/libs/Redis.php	/^        \/\/echo $n=$this->lRem($lkey, 0, $key)."\\n";$/;"	v
+ping	src/client/libs/Redis.php	/^    public function ping()$/;"	f
+ping	src/server/libs/Redis.php	/^    public function ping()$/;"	f
+port	src/client/libs/Redis.php	/^            $this->port = $config['port'] ? $config['port'] : 6379;$/;"	v
+port	src/client/libs/Redis.php	/^    protected $port;$/;"	v
+port	src/server/libs/Redis.php	/^            $this->port = $config['port'] ? $config['port'] : 6379;$/;"	v
+port	src/server/libs/Redis.php	/^    protected $port;$/;"	v
+pos	src/client/index.php	/^$pos = strpos($config_path, '--config=');$/;"	v
+pos	src/server/index.php	/^$pos = strpos($config_path, '--config=');$/;"	v
+prefix	src/client/libs/DbMysqli.php	/^    protected $prefix = '';$/;"	v
+prefix	src/server/libs/DbMysqli.php	/^    protected $prefix = '';$/;"	v
+primaryKey	src/client/model/mysql/users/User.php	/^    protected $primaryKey = "id";$/;"	v
+primaryKey	src/server/model/mysql/users/User.php	/^    protected $primaryKey = "id";$/;"	v
+pushMessage	src/client/libs/Redis.php	/^    public function pushMessage($lkey, $msg)$/;"	f
+pushMessage	src/server/libs/Redis.php	/^    public function pushMessage($lkey, $msg)$/;"	f
+rPop	src/client/libs/Redis.php	/^    public function rPop($key)$/;"	f
+rPop	src/server/libs/Redis.php	/^    public function rPop($key)$/;"	f
+rPush	src/client/libs/Redis.php	/^    public function rPush($key, $value)$/;"	f
+rPush	src/server/libs/Redis.php	/^    public function rPush($key, $value)$/;"	f
+rPushx	src/client/libs/Redis.php	/^    public function rPushx($key, $value)$/;"	f
+rPushx	src/server/libs/Redis.php	/^    public function rPushx($key, $value)$/;"	f
+randomKey	src/client/libs/Redis.php	/^    public function randomKey()$/;"	f
+randomKey	src/server/libs/Redis.php	/^    public function randomKey()$/;"	f
+redis	src/client/libs/Redis.php	/^            $this->redis = new \\RedisCluster(NULL, $config);$/;"	v
+redis	src/client/libs/Redis.php	/^        $this->redis = new \\Redis();$/;"	v
+redis	src/client/libs/Redis.php	/^    private $redis;$/;"	v
+redis	src/client/service/Basic.php	/^        $redis = Redis::getInstance(RedisConf::$config,['isRedisCluster' => 1]);$/;"	v
+redis	src/server/libs/Redis.php	/^            $this->redis = new \\RedisCluster(NULL, $config);$/;"	v
+redis	src/server/libs/Redis.php	/^        $this->redis = new \\Redis();$/;"	v
+redis	src/server/libs/Redis.php	/^    private $redis;$/;"	v
+redis	src/server/service/Basic.php	/^        $redis = Redis::getInstance(RedisConf::$config,['isRedisCluster' => 1]);$/;"	v
+redisInfo	src/client/libs/Redis.php	/^        $redisInfo = $this->getConnInfo();$/;"	v
+redisInfo	src/server/libs/Redis.php	/^        $redisInfo = $this->getConnInfo();$/;"	v
+redisStr	src/client/libs/Redis.php	/^        $redisStr = implode(' ', $cmdArr);$/;"	v
+redisStr	src/server/libs/Redis.php	/^        $redisStr = implode(' ', $cmdArr);$/;"	v
+request	src/client/component/Controller.php	/^        $this->request = $request;$/;"	v
+request	src/client/component/Controller.php	/^    protected $request;$/;"	v
+requestGetParam	src/client/component/Controller.php	/^    public function requestGetParam()$/;"	f
+requestPostParam	src/client/component/Controller.php	/^    public function requestPostParam()$/;"	f
+requestType	src/client/component/Controller.php	/^    public function requestType()$/;"	f
+res	src/client/libs/Mysql.php	/^        $res = $this->db->insert($this->dbTable,$data);$/;"	v
+res	src/client/libs/Redis.php	/^            $res = $this->hGetAll($key);$/;"	v
+res	src/server/libs/Mysql.php	/^        $res = $this->db->insert($this->dbTable,$data);$/;"	v
+res	src/server/libs/Redis.php	/^            $res = $this->hGetAll($key);$/;"	v
+response	src/client/component/Controller.php	/^        $this->response = $response;$/;"	v
+response	src/client/component/Controller.php	/^    protected $response;$/;"	v
+result	src/client/common/Common.php	/^            $result = $wrapper->findObjectById($servantName);$/;"	v
+result	src/client/conf/ENVConf.php	/^        $result = $table->get('tars:php:tarsConf');$/;"	v
+result	src/server/common/Common.php	/^            $result = $wrapper->findObjectById($servantName);$/;"	v
+result	src/server/conf/ENVConf.php	/^        $result = $table->get('tars:php:tarsConf');$/;"	v
+returnJson	src/client/component/Controller.php	/^	public function returnJson($data)$/;"	f
+row	src/client/libs/Redis.php	/^            $row = trim($row);$/;"	v
+row	src/server/libs/Redis.php	/^            $row = trim($row);$/;"	v
+sAdd	src/client/libs/Redis.php	/^    public function sAdd($key, $value)$/;"	f
+sAdd	src/server/libs/Redis.php	/^    public function sAdd($key, $value)$/;"	f
+sDiff	src/client/libs/Redis.php	/^    public function sDiff($key1, $key2)$/;"	f
+sDiff	src/server/libs/Redis.php	/^    public function sDiff($key1, $key2)$/;"	f
+sIsMember	src/client/libs/Redis.php	/^    public function sIsMember($key,$val)$/;"	f
+sIsMember	src/server/libs/Redis.php	/^    public function sIsMember($key,$val)$/;"	f
+sMembers	src/client/libs/Redis.php	/^    public function sMembers($key)$/;"	f
+sMembers	src/server/libs/Redis.php	/^    public function sMembers($key)$/;"	f
+save	src/client/libs/Redis.php	/^    public function save()$/;"	f
+save	src/server/libs/Redis.php	/^    public function save()$/;"	f
+saveAllData	src/client/libs/Mysql.php	/^    public function saveAllData($data) $/;"	f
+saveAllData	src/server/libs/Mysql.php	/^    public function saveAllData($data) $/;"	f
+saveData	src/client/libs/Mysql.php	/^    public function saveData($data)$/;"	f
+saveData	src/server/libs/Mysql.php	/^    public function saveData($data)$/;"	f
+scard	src/client/libs/Redis.php	/^    public function scard($key)$/;"	f
+scard	src/server/libs/Redis.php	/^    public function scard($key)$/;"	f
+select	src/client/libs/Redis.php	/^    public function select($dbId)$/;"	f
+select	src/server/libs/Redis.php	/^    public function select($dbId)$/;"	f
+sendRaw	src/client/component/Controller.php	/^    public function sendRaw($result)$/;"	f
+servant	src/client/common/Common.php	/^            $servant = false;$/;"	v
+servant	src/client/common/Common.php	/^            $servant = new $nameSpace($config);$/;"	v
+servant	src/server/common/Common.php	/^            $servant = false;$/;"	v
+servant	src/server/common/Common.php	/^            $servant = new $nameSpace($config);$/;"	v
+servantName	src/client/common/Common.php	/^            $servantName = $servant->_servantName;$/;"	v
+servantName	src/server/common/Common.php	/^            $servantName = $servant->_servantName;$/;"	v
+set	src/client/libs/Redis.php	/^    public function set($key, $value)$/;"	f
+set	src/server/libs/Redis.php	/^    public function set($key, $value)$/;"	f
+setDB	src/client/libs/Mysql.php	/^    public function setDB($dbName):\\dbObject$/;"	f
+setDB	src/server/libs/Mysql.php	/^    public function setDB($dbName):\\dbObject$/;"	f
+setex	src/client/libs/Redis.php	/^    public function setex($key, $expire, $value)$/;"	f
+setex	src/server/libs/Redis.php	/^    public function setex($key, $expire, $value)$/;"	f
+setnx	src/client/libs/Redis.php	/^    public function setnx($key, $value)$/;"	f
+setnx	src/server/libs/Redis.php	/^    public function setnx($key, $value)$/;"	f
+socketMode	src/client/common/Common.php	/^            $socketMode = ENVConf::$socketMode;$/;"	v
+socketMode	src/client/conf/ENVConf.php	/^    public static $socketMode = 3;$/;"	v
+socketMode	src/server/common/Common.php	/^            $socketMode = ENVConf::$socketMode;$/;"	v
+socketMode	src/server/conf/ENVConf.php	/^    public static $socketMode = 3;$/;"	v
+socketModuleName	src/client/common/Common.php	/^            $socketModuleName = ENVConf::$socketModuleName;$/;"	v
+socketModuleName	src/client/conf/ENVConf.php	/^    public static $socketModuleName = '${doTarsServerName}.${doTarsServantName}';$/;"	v
+socketModuleName	src/server/common/Common.php	/^            $socketModuleName = ENVConf::$socketModuleName;$/;"	v
+socketModuleName	src/server/conf/ENVConf.php	/^    public static $socketModuleName = '${doTarsServerName}.${doTarsServantName}';$/;"	v
+srem	src/client/libs/Redis.php	/^    public function srem($key, $value)$/;"	f
+srem	src/server/libs/Redis.php	/^    public function srem($key, $value)$/;"	f
+start	src/client/libs/Redis.php	/^    public function zRangeByScore($key, $start = '-inf', $end = "+inf", $option = [])$/;"	v
+start	src/client/libs/Redis.php	/^    public function zRevRangeByScore($key, $start = '-inf', $end = "+inf", $option = [])$/;"	v
+start	src/server/libs/Redis.php	/^    public function zRangeByScore($key, $start = '-inf', $end = "+inf", $option = [])$/;"	v
+start	src/server/libs/Redis.php	/^    public function zRevRangeByScore($key, $start = '-inf', $end = "+inf", $option = [])$/;"	v
+status	src/client/component/Controller.php	/^    public function status($http_status_code)$/;"	f
+table	src/client/conf/ENVConf.php	/^        $table = $_SERVER->table;$/;"	v
+table	src/server/conf/ENVConf.php	/^        $table = $_SERVER->table;$/;"	v
+tarsConf	src/client/conf/ENVConf.php	/^        $tarsConf = unserialize($result['tarsConfig']);$/;"	v
+tarsConf	src/server/conf/ENVConf.php	/^        $tarsConf = unserialize($result['tarsConfig']);$/;"	v
+timestamps	src/client/model/mysql/users/User.php	/^    protected $timestamps = '';$/;"	v
+timestamps	src/server/model/mysql/users/User.php	/^    protected $timestamps = '';$/;"	v
+ttl	src/client/libs/Redis.php	/^    public function ttl($key)$/;"	f
+ttl	src/server/libs/Redis.php	/^    public function ttl($key)$/;"	f
+undlineToHump	src/client/common/Common.php	/^    public static function undlineToHump($str = '')$/;"	f
+undlineToHump	src/server/common/Common.php	/^    public static function undlineToHump($str = '')$/;"	f
+uniqid	src/client/timer/IndexTimer.php	/^        $uniqid = md5(uniqid(microtime(true),true));$/;"	v
+unwatch	src/client/libs/Redis.php	/^    public function unwatch()$/;"	f
+unwatch	src/server/libs/Redis.php	/^    public function unwatch()$/;"	f
+updateData	src/client/libs/Mysql.php	/^    public function updateData($where,$param,$data)$/;"	f
+updateData	src/server/libs/Mysql.php	/^    public function updateData($where,$param,$data)$/;"	f
+value	src/client/component/Controller.php	/^    public function cookie($key, $value = '', $expire = 0, $path = '\/', $domain = '', $secure = false, $httponly = false)$/;"	v
+value	src/client/libs/Redis.php	/^        $value = intval($value);$/;"	v
+value	src/server/libs/Redis.php	/^        $value = intval($value);$/;"	v
+watch	src/client/libs/Redis.php	/^    public function watch($key)$/;"	f
+watch	src/server/libs/Redis.php	/^    public function watch($key)$/;"	f
+wrapper	src/client/common/Common.php	/^            $wrapper = new QueryFWrapper($locator, 1, 60000);$/;"	v
+wrapper	src/server/common/Common.php	/^            $wrapper = new QueryFWrapper($locator, 1, 60000);$/;"	v
+zAdd	src/client/libs/Redis.php	/^    public function zAdd($key, $order, $value)$/;"	f
+zAdd	src/server/libs/Redis.php	/^    public function zAdd($key, $order, $value)$/;"	f
+zCard	src/client/libs/Redis.php	/^    public function zCard($key)$/;"	f
+zCard	src/server/libs/Redis.php	/^    public function zCard($key)$/;"	f
+zCount	src/client/libs/Redis.php	/^    public function zCount($key, $start, $end)$/;"	f
+zCount	src/server/libs/Redis.php	/^    public function zCount($key, $start, $end)$/;"	f
+zRange	src/client/libs/Redis.php	/^    public function zRange($key, $start, $end)$/;"	f
+zRange	src/server/libs/Redis.php	/^    public function zRange($key, $start, $end)$/;"	f
+zRangeByScore	src/client/libs/Redis.php	/^    public function zRangeByScore($key, $start = '-inf', $end = "+inf", $option = [])$/;"	f
+zRangeByScore	src/server/libs/Redis.php	/^    public function zRangeByScore($key, $start = '-inf', $end = "+inf", $option = [])$/;"	f
+zRank	src/client/libs/Redis.php	/^    public function zRank($key, $value)$/;"	f
+zRank	src/server/libs/Redis.php	/^    public function zRank($key, $value)$/;"	f
+zRem	src/client/libs/Redis.php	/^    public function zRem($key, $value)$/;"	f
+zRem	src/server/libs/Redis.php	/^    public function zRem($key, $value)$/;"	f
+zRemRangeByScore	src/client/libs/Redis.php	/^    public function zRemRangeByScore($key, $start, $end)$/;"	f
+zRemRangeByScore	src/server/libs/Redis.php	/^    public function zRemRangeByScore($key, $start, $end)$/;"	f
+zRevRange	src/client/libs/Redis.php	/^    public function zRevRange($key, $start, $end)$/;"	f
+zRevRange	src/server/libs/Redis.php	/^    public function zRevRange($key, $start, $end)$/;"	f
+zRevRangeByScore	src/client/libs/Redis.php	/^    public function zRevRangeByScore($key, $start = '-inf', $end = "+inf", $option = [])$/;"	f
+zRevRangeByScore	src/server/libs/Redis.php	/^    public function zRevRangeByScore($key, $start = '-inf', $end = "+inf", $option = [])$/;"	f
+zRevRank	src/client/libs/Redis.php	/^    public function zRevRank($key, $value)$/;"	f
+zRevRank	src/server/libs/Redis.php	/^    public function zRevRank($key, $value)$/;"	f
+zScore	src/client/libs/Redis.php	/^    public function zScore($key, $value)$/;"	f
+zScore	src/server/libs/Redis.php	/^    public function zScore($key, $value)$/;"	f
+zinCry	src/client/libs/Redis.php	/^    public function zinCry($key, $num, $value)$/;"	f
+zinCry	src/server/libs/Redis.php	/^    public function zinCry($key, $num, $value)$/;"	f
