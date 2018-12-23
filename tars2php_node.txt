@@ -1,7 +1,0 @@
-fromFile			tars文件
-servantName		服务全址
-appName			应用名
-serverName		服务名
-objName			obj名
-outputDir		tars代码生成地址 默认当前目录
-InputDir			tars文件地址
