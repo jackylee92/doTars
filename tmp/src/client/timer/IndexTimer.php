@@ -1,7 +1,7 @@
 <?php
 namespace src\timer;
 
-use src\service\Common;
+use src\common\Common;
 
 class IndexTimer
 {
