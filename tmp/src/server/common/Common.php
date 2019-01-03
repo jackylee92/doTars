@@ -2,12 +2,11 @@
 namespace src\common;
 use Tars\client\CommunicatorConfig;
 use Tars\registry\QueryFWrapper;
-use src\component\Controller;
 use src\conf\ENVConf;
 /**
  * 通用类
  */
-class Common extends Controller
+class Common
 {
     /**
      * 下划线转驼峰
