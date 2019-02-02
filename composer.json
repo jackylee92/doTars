@@ -16,7 +16,7 @@
         "phptars/tars2php": "~0.1",
         "phptars/tars-log": "~0.1",
         "ext-zip" : ">=0.0.1",
-        "ljd/dotars-init": "v2.0.4"
+        "ljd/dotars-init": "v2.0.5"
     },
     "scripts" : {
         "post-create-project-cmd": "dotars\\DotarsInit::index",

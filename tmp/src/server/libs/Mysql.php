@@ -33,6 +33,7 @@ class Mysql extends \dbObject
      */
     public function getDataByWhere($where,$param)
     {
+        $this->updateDb();
         $data = $this->db->where($where,$param)->get($this->dbTable);
         Common::logInfo('NOTICE ['. date('Y-m-d H:i:s') .']SQL:'.$this->db->getLastQuery());
         return $data;
@@ -40,6 +41,7 @@ class Mysql extends \dbObject
 
     public function doSql($sql)
     {
+        $this->updateDb();
         try{
             $data = $this->db->query($sql);
         } catch(\Exception $e) {
@@ -65,44 +67,73 @@ class Mysql extends \dbObject
      */
     public function findDataByWhere($where,$param)
     {
+        $this->updateDb();
         return $this->db->where($where,$param)->getOne($this->dbTable);
     }
     public function getModelDb()
     {
+        $this->updateDb();
         return $this->db;
     }
     public function getAllData()
     {
+        $this->updateDb();
         return $this->db->get($this->dbTable);
     }
 
     public function getLastSqlError()
     {
+        $this->updateDb();
         return $this->db->getLastErrno();
     }
 
     public function getLastSql() 
     {
+        $this->updateDb();
         return $this->db->getLastQuery();
     }
 
     public function saveData($data)
     {
-        $res = $this->db->insert($this->dbTable,$data);
-        Common::logInfo('INFO : Sql [' . $this->getLastSql().']');
-        return $res ? $this->db->getInsertId() : false;
+        $this->updateDb();
+        try{
+            $res = $this->db->insert($this->dbTable,$data);
+        }catch (\Exception $e) {
+            Common::logInfo('Error Code['.$e->getCode().']; Msg['.$e->getMessage().']');
+            return false;
+        }
+        return $res;
     }
     public function saveAllData($data) 
     {
+        $this->updateDb();
         return $this->db->insertMulti($this->dbTable,$data);
     }
     public function deleteByWhere($where,$param)
     {
+        $this->updateDb();
         return $this->db->where($where,$param)->delete($this->dbTable);
     }
     public function updateData($where,$param,$data)
     {
+        $this->updateDb();
         return $this->db->where($where,$param)->update($this->dbTable, $data);
+    }
+    public function getDbObj()
+    {
+        $this->updateDb();
+        return \dbObject::table($this->dbTable);
+    }
+    public function getCount($where)
+    {
+        $this->updateDb();
+        return $this->getDbObj()->where(...$where)->count();
+    }
+    private function updateDb()
+    {
+        if(isset($this->dbName) && $this->db->defConnectionName != $this->dbName) {
+            $this->db->connection($this->dbName);
+        }
     }
 }
 
