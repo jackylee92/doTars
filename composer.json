@@ -6,7 +6,7 @@
     "authors": [
         {
             "name": "lijundong",
-            "email": "jackykee92@139.com"
+            "email": "jackylee92@139.com"
         }
     ],
     "minimum-stability": "dev",
@@ -16,7 +16,8 @@
         "phptars/tars2php": "~0.1",
         "phptars/tars-log": "~0.1",
         "ext-zip" : ">=0.0.1",
-        "ljd/dotars-init": "v2.0.6"
+        "joshcam/mysqli-database-class": "^2.9",
+        "ljd/dotars-init": "v2.0.7"
     },
     "scripts" : {
         "post-create-project-cmd": "dotars\\DotarsInit::index",
