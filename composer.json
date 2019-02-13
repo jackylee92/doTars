@@ -17,7 +17,7 @@
         "phptars/tars-log": "~0.1",
         "ext-zip" : ">=0.0.1",
         "joshcam/mysqli-database-class": "^2.9",
-        "ljd/dotars-init": "v2.0.7"
+        "ljd/dotars-init": "v2.0.6"
     },
     "scripts" : {
         "post-create-project-cmd": "dotars\\DotarsInit::index",
