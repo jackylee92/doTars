@@ -2,6 +2,8 @@
 namespace src\component;
 use Tars\core\Request;
 use Tars\core\Response;
+use src\common\Common;
+
 class Controller
 {
     protected $request;
@@ -39,6 +41,7 @@ class Controller
     }
 	public function returnJson($data)
     {
+        Common::logInfo('Return ',json_encode($data,JSON_UNESCAPED_UNICODE));
         return $this->sendRaw(json_encode($data,JSON_UNESCAPED_UNICODE));
     }
 	   /**
@@ -61,7 +64,9 @@ class Controller
      */
     public function requestGetParam()
     {
-        return isset($this->request->data['get']) ? $this->request->data['get'] : [];
+        $data = isset($this->request->data['get']) ? $this->request->data['get'] : [];
+        Common::logInfo('Get',json_encode(['GET' => $data],JSON_UNESCAPED_UNICODE));
+        return $data;
     }
 
     /**
@@ -71,7 +76,9 @@ class Controller
      */
     public function requestPostParam()
     {
-        return isset($this->request->data['post']) ? $this->request->data['post'] : [];
+        $data = isset($this->request->data['post']) ? $this->request->data['post'] : [];
+        Common::logInfo('Post',json_encode(['POST' => $data],JSON_UNESCAPED_UNICODE));
+        return $data;
     }
 
 

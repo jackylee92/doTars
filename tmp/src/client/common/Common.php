@@ -87,7 +87,7 @@ class Common
         }catch (\Exception $e) {
             $code = $e->getCode();
             $msg = $e->getMessage();
-            self::logInfo('ERROR 链接服务失败['.$nameSpace.']; Code:['. $code. ']; Msg:['.$msg.']');
+            self::logInfo('ERROR', '链接服务失败['.$nameSpace.']; Code:['. $code. ']; Msg:['.$msg.']');
             $servant = false;
         }
         return $servant;
@@ -104,8 +104,10 @@ class Common
 
     }
 
-    public static function logInfo($content)
+    public static function logInfo($type, $content)
     {
-        echo "\r\n".'LOG ['.date('Y-m-d H:i:s').'] : '.$content."\r\n";
+        echo "\r\n".'LOG ['.date('Y-m-d H:i:s').'] : type : ['. $type . '] Msg : ['. $content."]\r\n";
     }
+
+
 }
