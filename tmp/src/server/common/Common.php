@@ -10,7 +10,7 @@ class Common
 {
     /**
      * 下划线转驼峰
-     * @author LiuFajun
+     * @author lijundong
      * @param  string $word
      * @return string
      */
@@ -24,7 +24,7 @@ class Common
 
     /**
      * 驼峰转下划线
-     * @author LiuFajun
+     * @author lijundong
      * @param  string $word
      * @return string
      */
@@ -35,7 +35,7 @@ class Common
 
     /**
      * 批量转换字段
-     * @author LiuFajun
+     * @author lijundong
      * @param array $fields
      * @param string $action
      * @return array
